@@ -10,8 +10,10 @@
     <header>
       <div class="header">
         <div class="header-top">
-          <img class="logo" src="" alt="Логотип" />
-          <h3 class="header-name">FromBoard Delivery</h3>
+          <div class="logo-container">
+            <img class="logo" src="" alt="Логотип" />
+            <h3 class="name-company">FromBoard Delivery</h3>
+          </div>
           <div class="header-information">
             <p class="header-price">
               Доставляем товары из заграницы в Россию <br />
@@ -50,65 +52,64 @@
           <img src="" alt="Упаковка посылки" />
         </div>
         <div class="calculator">
-    <input
-        class="form-item"
-        type="text"
-        name="name"
-        placeholder="Имя" />
+          <form class="delivery-form" action="#">
+            <input
+              class="form-item"
+              type="text"
+              name="name"
+              placeholder="Имя" />
 
-    <input 
-        class="form-item" 
-        type="email" 
-        name="email"
-        placeholder="Почта" /> 
+            <input class="form-item" type="email" name="email"
+            placeholder=ППочта" />
 
-    <input
-        class="form-item"
-        type="tel"
-        name="phone"          
-        placeholder="Телефон" />
+            <input
+              class="form-item"
+              type="tel"
+              name="contact"
+              placeholder="Телефон" />
 
-    <input
-        class="form-item"
-        type="number"
-        name="area"            
-        placeholder="Общая площадь, м²" />
+            <input
+              class="form-item"
+              type="number"
+              name="parcel."
+              placeholder="Общая площадь, м²" />
 
-    <input
-        class="form-item"
-        type="number"
-        name="weight"
-        placeholder="Вес, кг" />
+            <input
+              class="form-item"
+              type="number"
+              name="weight"
+              placeholder="Вес, кг" />
 
-    <input
-        class="form-item"
-        type="text"
-        name="purchase_country"
-        placeholder="Страна покупки" />
+            <input
+              class="form-item"
+              type="text"
+              name="country"
+              placeholder="Страна покупки" />
 
-    <input
-        class="form-item"
-        type="text"
-        name="purchase_city"  
-        placeholder="Город покупки" />
+            <input
+              class="form-item"
+              type="text"
+              name="city-buy"
+              placeholder="Город покупки" />
 
-    <input
-        class="form-item"
-        type="text"
-        name="delivery_region" 
-        placeholder="Область доставки" />
+            <input
+              class="form-item"
+              type="text"
+              name="region"
+              placeholder="Область доставки" />
 
-    <input
-        class="form-item"
-        type="text"
-        name="delivery_city"   
-        placeholder="Город доставки" />
+            <input
+              class="form-item"
+              type="text"
+              name="city"
+              placeholder="Город доставки" />
 
-    <input
-        class="form-button"
-        type="submit"
-        value="Заказать расчёт" />  
-</form>
+            <input
+              class="form-button"
+              type="submit"
+              name="confirm"
+              value="Заказать расчёт" />
+          </form>
         </div>
       </section>
 
@@ -179,10 +180,149 @@
           необходимых для ввоза и вывоза товаров, а также для успешного бизнеса
           на мировом рынке. Мы предоставляем вам надёжность и уверенность
         </p>
-        <div class="guarantee-gallery"></div>
+        <div class="guarantee-gallery">
+          <div class="guarantee-list">
+            <img
+              class="guarantee-img"
+              src=""
+              alt="Свидетельство о регистрации в РФ" />
+            <h3 class="list-text">Свидетельство о регистрации в РФ</h3>
+          </div>
+
+          <div class="guarantee-list">
+            <img
+              class="guarantee-img"
+              src=""
+              alt="Свидетельство о регистрации в США" />
+            <h3 class="list-text">Свидетельство о регистрации в США</h3>
+          </div>
+
+          <div class="guarantee-list">
+            <img
+              class="guarantee-img"
+              src=""
+              alt="Свидетельство о регистрации в Китае" />
+            <h3 class="list-text">Свидетельство о регистрации в Китае</h3>
+          </div>
+
+          <div class="guarantee-list">
+            <img
+              class="guarantee-img"
+              src=""
+              alt="Свидетельство о регистрации в Великобритнии" />
+            <h3 class="list-text">
+              Свидетельство о регистрации в Великобритнии
+            </h3>
+          </div>
+          <a class="guarantee-button" href="#"></a>
+        </div>
       </section>
-      <section id="review"></section>
+      <section id="review">
+        <h2 class="review-title">Отзывы</h2>
+        <div class="review-content">
+          <div class="review-list">
+            <p class="review-text">
+              Я заказала последний iPhone из США через ваш сервис, и доставка
+              прошла быстро и без каких‑либо проблем. Гарантии качества и
+              надёжная упаковка сделали мой опыт покупки невероятно позитивным
+            </p>
+            <div class="review-user">
+              <p class="review-username">Анна</p>
+              <img class="review-img" src="" alt="Кавычки" />
+            </div>
+          </div>
+
+          <div class="review-list">
+            <p class="review-text">
+              Я уже несколько лет заказываю дизайнерскую одежду из Франции через
+              ваш сервис, и он никогда меня не подводил. Важно иметь надёжную
+              компанию, которая позаботится о вашем заказе и предоставит все
+              необходимые документы для ввоза в Россию
+            </p>
+            <div class="review-user">
+              <p class="review-username">Алексей</p>
+              <img class="review-img" src="" alt="Кавычки" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <form id="form-questions" class="form-questions" action="#">
+        <input
+          class="quastions-item"
+          type="text"
+          name="name"
+          placeholder="Имя" />
+        <input
+          class="quastions-item"
+          type="email"
+          name="email"
+          placeholder="Почта" />
+        <input
+          class="quastions-item"
+          type="tel"
+          name="phone"
+          placeholder="Телефон" />
+        <input
+          class="quastions-item"
+          type="text"
+          name="question"
+          placeholder="Тема вопроса" />
+        <input
+          class="quastions-item"
+          type="text"
+          name="question-message"
+          placeholder="Сообщение..." />
+        <input
+          class="quastions-item"
+          type="submit"
+          placeholder="Оставить заявку" />
+      </form>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="logo-container">
+            <div class="logo-top">
+              <img class="logo" src="" alt="Логотип" />
+              <h3 class="name-company">FromBoard Delivery</h3>
+            </div>
+            <p class="justice">
+              2023 © Ни одно право не защищено, копируйте сколько влезет
+            </p>
+          </div>
+
+          <div class="footer-navigation">
+            <nav class="nav-container">
+              <ul class="navigation">
+                <li class="nav-item"><a href="#delivery">Калькулятор</a></li>
+                <li class="nav-item"><a href="#advantag">О нас</a></li>
+                <li class="nav-item"><a href="#guarantee">Гарантии</a></li>
+                <li class="nav-item"><a href="#review">Отзывы</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="footer-contact">
+            <h3 class="footer-number">+7 (800) 123 45-67</h3>
+            <p class="footer-call">Звонки по России бесплатны</p>
+          </div>
+        </div>
+
+        <div class="footer-offer">
+          <p class="footer-info">
+            НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить внимание на то, что
+            цены носят информационный и ознакомительный характер, а значит ни в
+            какой мере не являются публичной офертой, которая определена в ст.
+            437 ГК РФ. Вся информация на сайте может содержать неточности,
+            орфографические и иные ошибки, она не является полной, окончательно
+            и исчерпывающей
+          </p>
+          <p class="footer-author">
+            Разработкой макета занимался Васильев Александр | Что-то на IT’шном
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
