@@ -12,7 +12,7 @@
         <div class="header-top">
           <div class="logo-container">
             <img class="logo" src="" alt="Логотип" />
-            <h3 class="name-company">FromBoard Delivery</h3>
+            <h3 class="company-name">FromBoard Delivery</h3>
           </div>
           <div class="header-information">
             <p class="header-price">
@@ -54,52 +54,55 @@
         <div class="calculator">
           <form class="delivery-form" action="#">
             <input
-              class="form-item"
+              class="delivery-input"
               type="text"
               name="name"
               placeholder="Имя" />
 
-            <input class="form-item" type="email" name="email"
-            placeholder=Почта" />
+            <input
+              class="delivery-input"
+              type="email"
+              name="email"
+              placeholder="Почта" />
 
             <input
-              class="form-item"
+              class="delivery-input"
               type="tel"
               name="contact"
               placeholder="Телефон" />
 
             <input
-              class="form-item"
+              class="delivery-input"
               type="number"
-              name="parcel."
+              name="parcel"
               placeholder="Общая площадь, м²" />
 
             <input
-              class="form-item"
+              class="delivery-input"
               type="number"
               name="weight"
               placeholder="Вес, кг" />
 
             <input
-              class="form-item"
+              class="delivery-input"
               type="text"
               name="country"
               placeholder="Страна покупки" />
 
             <input
-              class="form-item"
+              class="delivery-input"
               type="text"
               name="city-buy"
               placeholder="Город покупки" />
 
             <input
-              class="form-item"
+              class="delivery-input"
               type="text"
               name="region"
               placeholder="Область доставки" />
 
             <input
-              class="form-item"
+              class="delivery-input"
               type="text"
               name="city"
               placeholder="Город доставки" />
@@ -181,36 +184,38 @@
           на мировом рынке. Мы предоставляем вам надёжность и уверенность
         </p>
         <div class="guarantee-gallery">
-          <div class="guarantee-list">
+          <div class="guarantee-card">
             <img
               class="guarantee-img"
               src=""
               alt="Свидетельство о регистрации в РФ" />
-            <h3 class="list-text">Свидетельство о регистрации в РФ</h3>
+            <h3 class="certificate-title">Свидетельство о регистрации в РФ</h3>
           </div>
 
-          <div class="guarantee-list">
+          <div class="guarantee-card">
             <img
               class="guarantee-img"
               src=""
               alt="Свидетельство о регистрации в США" />
-            <h3 class="list-text">Свидетельство о регистрации в США</h3>
+            <h3 class="certificate-title">Свидетельство о регистрации в США</h3>
           </div>
 
-          <div class="guarantee-list">
+          <div class="guarantee-card">
             <img
               class="guarantee-img"
               src=""
               alt="Свидетельство о регистрации в Китае" />
-            <h3 class="list-text">Свидетельство о регистрации в Китае</h3>
+            <h3 class="certificate-title">
+              Свидетельство о регистрации в Китае
+            </h3>
           </div>
 
-          <div class="guarantee-list">
+          <div class="guarantee-card">
             <img
               class="guarantee-img"
               src=""
               alt="Свидетельство о регистрации в Великобритнии" />
-            <h3 class="list-text">
+            <h3 class="certificate-title">
               Свидетельство о регистрации в Великобритнии
             </h3>
           </div>
@@ -219,61 +224,61 @@
       </section>
       <section id="review">
         <h2 class="review-title">Отзывы</h2>
+
         <div class="review-content">
-          <div class="review-list">
-            <p class="review-text">
+          <article class="review-card">
+            <blockquote class="review-text">
               Я заказала последний iPhone из США через ваш сервис, и доставка
               прошла быстро и без каких‑либо проблем. Гарантии качества и
               надёжная упаковка сделали мой опыт покупки невероятно позитивным
-            </p>
+            </blockquote>
             <div class="review-user">
               <p class="review-username">Анна</p>
               <img class="review-img" src="" alt="Кавычки" />
             </div>
-          </div>
+          </article>
 
-          <div class="review-list">
-            <p class="review-text">
+          <article class="review-card">
+            <blockquote class="review-text">
               Я уже несколько лет заказываю дизайнерскую одежду из Франции через
               ваш сервис, и он никогда меня не подводил. Важно иметь надёжную
               компанию, которая позаботится о вашем заказе и предоставит все
               необходимые документы для ввоза в Россию
-            </p>
+            </blockquote>
             <div class="review-user">
               <p class="review-username">Алексей</p>
               <img class="review-img" src="" alt="Кавычки" />
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
       <form id="form-questions" class="form-questions" action="#">
         <input
-          class="quastions-item"
+          class="question-input"
           type="text"
           name="name"
           placeholder="Имя" />
         <input
-          class="quastions-item"
+          class="question-input"
           type="email"
           name="email"
           placeholder="Почта" />
         <input
-          class="quastions-item"
+          class="question-input"
           type="tel"
           name="phone"
           placeholder="Телефон" />
-        <input
-          class="quastions-item"
-          type="text"
+        <textarea
+          class="question-input"
           name="question"
-          placeholder="Тема вопроса" />
+          placeholder="Тема вопроса"></textarea>
         <input
-          class="quastions-item"
+          class="question-input"
           type="text"
           name="question-message"
           placeholder="Сообщение..." />
-        <input class="quastions-item" type="submit" value="Оставить заявку" />
+        <input class="question-button" type="submit" value="Оставить заявку" />
       </form>
     </main>
     <footer>
@@ -282,9 +287,9 @@
           <div class="logo-container">
             <div class="logo-top">
               <img class="logo" src="" alt="Логотип" />
-              <h3 class="name-company">FromBoard Delivery</h3>
+              <h3 class="company-name">FromBoard Delivery</h3>
             </div>
-            <p class="justice">
+            <p class="footer-copyright">
               2023 © Ни одно право не защищено, копируйте сколько влезет
             </p>
           </div>
@@ -306,7 +311,7 @@
           </div>
         </div>
 
-        <div class="footer-offer">
+        <div class="footer-legal">
           <p class="footer-info">
             НЕ ЯВЛЯЕТСЯ ПУБЛИЧНОЙ ОФЕРТОЙ. Просим обратить внимание на то, что
             цены носят информационный и ознакомительный характер, а значит ни в
