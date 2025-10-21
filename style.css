@@ -1,50 +1,30 @@
 @font-face {
-  font-family: "FormularBlack";
-  src: url(fonts/Formular-Black.woff);
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "FormularRegular";
+  font-family: "Formular";
   src: url(fonts/Formular\ .woff);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
-@font-face {
-  font-family: "FormularBold";
-  src: url(fonts/Formular-Bold.woff);
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-p,
-li {
-  font-family: "FormularRegular";
-}
-
-h3,
-h2,
-blockquote {
-  font-family: "FormularBlack";
-}
-
 header {
-  padding: 24px 192px 24px 192px;
+  max-width: 1536px;
+  margin: auto;
+  padding: 24px 0px;
 }
 
 main {
   background-color: rgb(229, 231, 235);
-  padding: 0px 192px 72px;
+  padding: 0px 0px 72px;
+}
+
+.main-container {
+  max-width: 1536px;
+  margin: auto;
 }
 
 footer {
   background-color: rgb(17, 24, 39);
-  padding: 40px 192px;
+  padding: 40px 0px;
 }
 
 .header {
@@ -72,7 +52,9 @@ footer {
 
 .header-title {
   font-size: 24px;
-  max-width: 252px;
+  font-weight: 900;
+  line-height: 36px;
+  font-family: "Formular";
 }
 
 .header-nav {
@@ -87,27 +69,35 @@ footer {
 }
 
 .header-price {
-  width: 100%;
-  max-width: 350px;
-  line-height: 2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Formular";
+  max-width: 349px;
+  text-align: right;
   color: rgb(17, 24, 39);
 }
 
 .header-contacts {
   display: flex;
+  gap: 4px;
   flex-direction: column;
-  gap: 18px;
 }
 
 .header-number {
   font-size: 36px;
   max-width: 342px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: "Formular";
   color: black;
 }
 
 .header-call {
   font-size: 24px;
-  max-width: 352px;
+  font-weight: 300;
+  line-height: 32px;
+  font-family: "Formular";
   color: rgb(17, 24, 39);
 }
 
@@ -123,8 +113,10 @@ footer {
 }
 
 .header-link {
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Formular";
   color: rgb(17, 24, 39);
-  max-width: 108px;
 }
 
 .header-link:hover {
@@ -137,8 +129,9 @@ footer {
   background-color: rgb(140, 94, 249);
   border-radius: 4px;
   color: white;
-  max-width: 202px;
-  font-family: "FormularBold";
+  line-height: 24px;
+  font-weight: 700px;
+  font-family: "Formular";
 }
 
 #delivery {
@@ -147,8 +140,7 @@ footer {
 
 .delivery-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 16px;
   margin-top: 72px;
 }
@@ -164,15 +156,21 @@ footer {
   flex-direction: column;
   gap: 12px;
 }
+
 .delivery-title {
-  font-size: 36px;
   max-width: 756px;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 900;
+  font-family: "Formular";
 }
 
 .delivery-subtitle {
   font-size: 20px;
-  max-width: 600px;
-  line-height: 1.5;
+  max-width: 756px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Formular";
 }
 
 .delivery-image {
@@ -192,13 +190,18 @@ footer {
 }
 .calculator-title {
   font-size: 30px;
-  max-width: 372px;
+  font-weight: 700;
+  line-height: 36px;
+  font-family: "Formular";
   color: rgb(17, 24, 39);
 }
 
 .calculator-subtitle {
   max-width: 358px;
-  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Formular";
+  text-align: center;
   color: rgb(17, 24, 39);
 }
 
@@ -214,19 +217,27 @@ footer {
   grid-column: span 2;
   border: 2px solid rgb(17, 24, 39);
   border-radius: 4px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Formular";
 }
 
 .delivery-input {
   padding-left: 12px;
   border: 2px solid rgb(17, 24, 39);
   border-radius: 4px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Formular";
 }
 .form-button {
   background-color: rgb(139, 92, 246);
   color: white;
   grid-column: span 2;
   border-radius: 4px;
-  font-family: "FormularBold";
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Formular";
 }
 
 #advantage {
@@ -241,7 +252,9 @@ footer {
 
 .advantage-title {
   font-size: 30px;
-  max-width: 336px;
+  line-height: 36px;
+  font-weight: 900;
+  font-family: "Formular";
   color: rgb(17, 24, 39);
 }
 
@@ -254,6 +267,7 @@ footer {
 
 .top-cards {
   display: flex;
+  justify-content: space-between;
   gap: 24px;
 }
 
@@ -282,12 +296,17 @@ footer {
 
 .card-title {
   font-size: 24px;
-  max-width: 300px;
+  line-height: 32px;
+  font-weight: 900;
+  font-family: "Formular";
 }
 
 .card-subtitle {
   font-size: 14px;
   max-width: 300px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Formular";
 }
 
 #guarantee {
@@ -295,6 +314,7 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  margin: 72px 0px;
 }
 
 .guarantee-info {
@@ -307,12 +327,17 @@ footer {
 
 .guarantee-title {
   font-size: 30px;
+  font-weight: 900;
+  line-height: 36px;
+  font-family: "Formular";
   color: rgb(17, 24, 39);
-  max-width: 304px;
 }
 
 .guarantee-subtitle {
   max-width: 756px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
   color: rgb(17, 24, 39);
 }
 
@@ -335,15 +360,23 @@ footer {
   aspect-ratio: 366/374;
 }
 
+.certificate-title {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 28px;
+  text-align: center;
+  font-family: "Formular";
+}
+
 .guarantee-button {
-  display: flex;
   background-color: rgb(139, 92, 246);
   padding: 16px 28px;
   color: white;
-  max-width: 308px;
   border-radius: 16px;
   margin-top: 36px;
-  font-family: "FormularBold";
+  font-weight: 900;
+  line-height: 24px;
+  font-family: "Formular";
 }
 
 #review {
@@ -352,11 +385,14 @@ footer {
   align-items: center;
   gap: 32px;
   margin-top: 72px;
+  font-family: "Formular";
 }
 
 .review-title {
   font-size: 30px;
-  max-width: 130px;
+  font-weight: 900;
+  line-height: 36px;
+  font-family: "Formular";
   color: rgb(17, 24, 39);
 }
 
@@ -368,17 +404,23 @@ footer {
 .review-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 30px;
   background-color: white;
   max-width: 626px;
   padding: 32px 42px;
   border-radius: 16px;
+  background-image: url(image/quotes.svg);
+  background-repeat: no-repeat;
+  background-position: right 18px bottom 40px;
 }
 
 .review-text {
   font-size: 24px;
   max-width: 540px;
-  line-height: 1.5;
+  line-height: 32px;
+  font-family: 700;
+  font-family: "Formular";
 }
 
 .review-user {
@@ -389,6 +431,9 @@ footer {
 
 .review-username {
   font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  font-family: "Formular";
   color: rgb(107, 114, 128);
 }
 
@@ -411,7 +456,9 @@ footer {
 
 .questions-title {
   font-size: 30px;
-  max-width: 322px;
+  font-weight: 900;
+  line-height: 36px;
+  font-family: "Formular";
   color: rgb(17, 24, 39);
 }
 
@@ -426,6 +473,9 @@ footer {
   padding-left: 12px;
   border: 2px solid rgb(17, 24, 39);
   border-radius: 4px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Formular";
 }
 
 .question-input-message {
@@ -441,13 +491,17 @@ footer {
   color: white;
   grid-column: span 2;
   border-radius: 4px;
-  font-family: "FormularBold";
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Formular";
 }
 
 .footer-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin: auto;
+  max-width: 1536px;
 }
 
 .footer-top {
@@ -475,13 +529,17 @@ footer {
 
 .company-name {
   font-size: 24px;
-  max-width: 252px;
+  font-weight: 900;
+  line-height: 32px;
   color: white;
+  font-family: "Formular";
 }
 
 .footer-copyright {
   font-size: 12px;
-  max-width: 380px;
+  font-weight: 400;
+  line-height: 16px;
+  font-family: "Formular";
   color: white;
 }
 
@@ -491,6 +549,9 @@ footer {
 }
 
 .footer-link {
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Formular";
   color: white;
 }
 
@@ -503,12 +564,17 @@ footer {
 .footer-number {
   font-size: 36px;
   max-width: 342px;
+  line-height: 40px;
+  font-weight: 400;
+  font-family: "Formular";
   color: white;
 }
 
 .footer-call {
   font-size: 24px;
-  max-width: 352px;
+  font-weight: 400;
+  line-height: 32px;
+  font-family: "Formular";
   color: white;
 }
 
@@ -517,15 +583,21 @@ footer {
   justify-content: space-between;
 }
 
-/* У макс ширины сомневаюсь что такое большое значение должно быть*/
 .footer-info {
   font-size: 12px;
-  max-width: 1180px;
+  max-width: 1146px;
+  font-weight: 300;
+  line-height: 16px;
+  font-family: "Formular";
   color: rgb(75, 85, 99);
 }
 
 .footer-author {
   font-size: 12px;
   max-width: 242px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: end;
+  font-family: "Formular";
   color: rgb(75, 85, 99);
 }
